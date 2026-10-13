@@ -1,13 +1,18 @@
-name: simple demo ci/cd
-
+ame: simpledemo ci/cd
 on:
-  push:
-    branches:
-      - main
-
+    push:
+        branches:
+            - main
+            
 jobs:
-  major1:
-    runs-on: ubuntu-latest
-    steps:
-      - name: hiiii
-        run: echo "hi to world"
+    job1:
+        runs-on: ubuntu-latest
+        steps:
+              - name: welcome
+                run: echo "hello world"
+    job2:
+        needs : job1
+        runs-on: ubuntu-latest
+        steps:
+              - name: welcome to campus
+                run: echo "welcom to nu"
