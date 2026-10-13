@@ -1,4 +1,4 @@
-ame: simpledemo ci/cd
+name: simpledemo ci/cd
 on:
     push:
         branches:
